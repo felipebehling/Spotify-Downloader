@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+About
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 mx-auto">
+            <h2 class="mt-5">About Spotify Downloader</h2>
+            <p class="lead">
+                Spotify Downloader is a web application developed using Flask, a micro web framework in Python. It leverages various Python libraries such as Pytube, MoviePy, and Spotipy to provide functionality for downloading Spotify playlists as MP3 files.
+            </p>
+            <p class="lead">
+                The application utilizes the Spotify API for authentication and accessing user playlists. Upon selecting a playlist, Spotify Downloader searches for each song on YouTube, retrieves the corresponding video, and then converts it to MP3 format.
+            </p>
+            <p class="lead">
+                One of the key features of Spotify Downloader is its ability to handle the download and conversion processes asynchronously. This means that these tasks are performed concurrently in separate threads, allowing the application to remain responsive and not block the main thread.
+            </p>
+            <p class="lead">
+                Additionally, Spotify Downloader provides users with real-time progress updates on the conversion process. This progress bar dynamically reflects the percentage of videos that have been successfully converted to MP3 format, enabling users to track the status of their downloads.
+            </p>
+            <p class="lead">
+                Developed by Felipe Behling in 2024, Spotify Downloader aims to offer a convenient solution for Spotify users who wish to enjoy their favorite playlists offline.
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

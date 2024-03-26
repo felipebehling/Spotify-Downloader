@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: "Gotham-Black", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    padding-bottom: 200px;
+    position: relative; 
+}
+
+header {
+    position: sticky; 
+    top: 0;
+    background-color: white; 
+    z-index: 1000;
+}
+
+footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; 
+}
+
+#playlistForm {
+    width: 400px;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+.pl-select {
+    width: 100%;
+    height: 50px;
+    font-size: 1.25rem; 
+    cursor: pointer;
+}
+
+.pl-label {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.btn-success {
+    margin-top: 10px; 
+    margin-bottom: 20px;
+
+    background-color: #1ed860;
+    border: 2px solid #1ed860;
+    color: #000 !important;
+
+    transition:  color .1s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.btn-success:hover {
+    background-color: transparent;
+    border-color: #1ed860;
+    color: #fff !important;
+
+    transition:  color .1s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-link {
+    margin: 5px;
+    padding: 0;
+
+    width: 120px;
+    height: 40px;
+
+    font-weight: bold;
+    text-align: center;
+
+    background-color: transparent;
+    color: #fff !important;
+
+    transition:  color .1s ease-in-out,background-color .15s ease-in-out;
+}
+.nav-link:hover {
+    color: #1ed860 !important;
+    align-items: center;
+
+    transition:  color .1s ease-in-out,background-color .15s ease-in-out;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+#progressBar {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: width 0.3s ease-in-out;
+}
+
+.progress {
+    height: 25px; 
+}
+
+.percentage {
+    margin-top: 10px; 
+}
