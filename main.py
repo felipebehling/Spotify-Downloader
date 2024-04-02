@@ -12,8 +12,9 @@ from spotipy import Spotify
 from spotipy.oauth2 import SpotifyOAuth
 from spotipy.cache_handler import FlaskSessionCacheHandler
 
-client_id = "d262067fcbd044c9bee4d6d6b47a4291"
-client_secret = "66197e8aa71a4605bbc9b936ddc217a0"
+client_id = "your_client_id"
+client_secret = "your_client_secret"
+
 redirect_uri = "http://localhost:5000/callback"
 scope = "playlist-read-private, streaming, playlist-modify-private, user-library-modify, user-library-read"
 
